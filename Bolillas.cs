@@ -1,18 +1,12 @@
-using System;
-
-namespace RepasoPersona.Core
+namespace Bolillero
 {
-    public class Persona
+    public class Bolillas
     {
-        public string Nombre { get; private set; }
-        public string Apellido { get; private set; }
-        public double Efectivo { get; private set; }
-        public Persona() => Efectivo = 0;
-        public Persona(string nombre, string apellido, double efectivo)
+        public int Numero { get; private set; }
+        
+        public Bolillas (string nombre, string apellido, double efectivo)
         {
-            Nombre = nombre;
-            Apellido = apellido;
-            Efectivo = efectivo;
+            Numero = numero;
         } 
 
         public void Debitar(double monto)
@@ -32,6 +26,7 @@ namespace RepasoPersona.Core
         }
     }
 }
+
 
 
 
